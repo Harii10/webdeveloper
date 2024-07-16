@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container" id="section">
+      <div id="content">
+        <h5>AWARD WINNING</h5>
+
+        <div id="h1">
+          <h1>DIGITAL MARKETING AGENCY</h1>
+        </div>
+
+        <div id="para">
+          <p>
+            These agencies utilize various digital channels such as search
+            engines, social media, email, and websites to promote products or
+            services, increase brand awareness, and drive traffic and sales.
+          </p>
+        </div>
+
+        <button type="button" class="btn btn-primary" id="button" data-toggle="modal" data-target="#exampleModal">
+          Contact Us
+        </button>
+      </div>
+      <aside id="aside">
+        <img src="images/hero@2x.png" alt="" />
+      </aside>
+    </section>
+    <!-- <section class="modal-container" id="form" tabindex="-1" aria-labelledby="contactCardModalLabel" aria-hidden="true">
+      <div>
+        <div class="modal-form-head">
+          <h4 class="modal-title">Talk to us</h4>
+        </div>
+
+        <div class="modal-body">
+          
+        </div>
+      </div>
+    </section> -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Talk To Us</h1>
+          </div>
+          <div class="modal-body">
+            <form action="https://getform.io/f/apjmnwla" method="POST" id="myform" onsubmit="handleForm()">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Work email*"
+                  id="email-input"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First name*"
+                    id="firstname-input"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last name*"
+                    id="lastname-input"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" class="form-control" name="subscribe" value="yes" id="checkbox" required>
+                <label>I agree to Fyle's terms and conditions, and provide consent to send me communications.</label>
+                <span class="checkmark"></span>
+              </div>
+              <button type="submit" class="btn btn-primary" id="contact-btn">Submit</button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <section id="section-2">
+      <div class="container">
+        <div id="content-2">
+          <h5>WHAT WE DO</h5>
+          <div id="sec-2">
+            <h1>SERVICE PROVIDE FOR YOU</h1>
+            <p>
+              These agencies utilize various digital channels such as search
+              engines, social media, email, and websites to promote products or
+              services, increase brand awareness, and drive traffic and sales.
+            </p>
+          </div>
+          <ul class="image-container">
+            <li class="image-item">
+              <div class="images"><img src="images/1.png" alt="" /></div>
+              <div class="hover-overlay">
+                <img src="images/icon.svg" alt="" />
+                <h6>WEB DEVELOPMENT</h6>
+                <span>These agencies utilize various digital channels</span>
+                <button id="btn" onclick="readMore()">
+                  Read More <img src="images/arrow.svg" alt="" />
+                </button>
+              </div>
+            </li>
+            <li class="image-item">
+              <div class="images"><img src="images/2.png" alt="" /></div>
+              <div class="hover-overlay">
+                <img src="images/icon.svg" alt="" />
+                <h6>WEB DEVELOPMENT</h6>
+                <span>These agencies utilize various digital channels</span>
+                <button id="btn" onclick="readMore()">
+                  Read More <img src="images/arrow.svg" alt="" />
+                </button>
+              </div>
+            </li>
+            <li class="image-item">
+              <div class="images"><img src="images/3.png" alt="" /></div>
+              <div class="hover-overlay">
+                <img src="images/icon.svg" alt="" />
+                <h6>WEB DEVELOPMENT</h6>
+                <span>These agencies utilize various digital channels</span>
+                <button id="btn" onclick="readMore()">
+                  Read More <img src="images/arrow.svg" alt="" />
+                </button>
+              </div>
+            </li>
+
+            <li class="image-item">
+              <div class="images"><img src="images/1.png" alt="" /></div>
+              <div class="hover-overlay">
+                <img src="images/icon.svg" alt="" />
+                <h6>WEB DEVELOPMENT</h6>
+                <span>These agencies utilize various digital channels</span>
+                <button id="btn" onclick="readMore()">
+                  Read More <img src="images/arrow.svg" alt="" />
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div class="curosel-dots">
+            <span class="dot active" data-index="0"
+              ><img src="images/2.svg" alt=""
+            /></span>
+            <span class="dot active" data-index="1"
+              ><img src="images/2.svg" alt=""
+            /></span>
+            <span class="dot active" data-index="2"
+              ><img src="images/2.svg" alt=""
+            /></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-3">
+      <div id="content-3">
+        <div class="headings">
+          <h5>OUR PROJECTS</h5>
+          <h1>WHY WE ARE THE BEST</h1>
+        </div>
+        <div class="aside-sec">
+          <aside>
+            <img id="image"  src="images/image.png" alt="" />
+          </aside>
+          <div class="info-sec">
+            <div class="infos" data-image="images/watch.png">
+              <h4>Genderless Kei - Japan's Hot</h4>
+              <p>
+                Set to launch on the manufacture's new watch,
+                its offering lots of features.
+              </p>
+            </div>
+            <div class="infos" data-image="images/image.png">
+              <h4>Genderless Kei - Japan's Hot</h4>
+              <p>
+                Set to launch on the manufacture's new A330neo aircraft in 2017,
+                its offering lots of features.
+              </p>
+            </div>
+            <div class="infos" data-image="images/d.jpg">
+              <h4>Better Strategy & Quality</h4>
+              <p>
+                Set to launch on the manufacture's drum kit in 2017,
+                its offering lots of gadgets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-4">
+      <div class="content-4">
+        <div class="headings">
+          <h5>EXPERTS GROWTHS</h5>
+          <h1>OUR COMPNAY GROWTH</h1>
+        </div>
+        <div class="inter-sec">
+          <div class="graph">
+            <img src="images/heart (2).svg" alt="" />
+            <span>199+</span>
+            <p class="g-para">Satisfied Customers</p>
+          </div>
+          <div class="graph">
+            <img src="images/clock (3).svg" alt="" />
+            <span>1591+</span>
+            <p class="g-para">Satisfied Customers</p>
+          </div>
+          <div class="graph">
+            <img src="images/Path 4402.svg" alt="" />
+            <span>283+</span>
+            <p class="g-para">Satisfied Customers</p>
+          </div>
+          <div class="graph">
+            <img src="images/Path 4406.svg" alt="" />
+            <span>75+</span>
+            <p class="g-para">Satisfied Customers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
